@@ -8,14 +8,20 @@
 <script type="text/javascript" src="memberScript.js" charset="utf-8"></script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script type="text/javascript">
+/*  ID 중복 검사버튼을 눌렀을 때 수행될 함수*/
 function idCheck(id){
+	/* 폼의 요소에 접근 */
 	frm =document.regFrm;
 	if(id==""){
 		alert("아이디를 입력해주세요.");
 		 frm.id.focus();
 		 return;
 	}
+	/* 아이디 중복 유무 검사 및 결과를 출력하는 팝업창 생성..  */
+	/*  idcheck.jsp에 id를 넘겨줄 url 구조.*/
+
 	url ="idCheck.jsp?id=" + id;
+	/* var ret = window.open(url,name,specs,replace); */
 	window.open(url, "IDCheck", "width=300,height=150")
 	}
 function findAddr(){
@@ -149,6 +155,7 @@ function findAddr(){
 			</tr>
 			<tr>
 				<td colspan="3" align="center">
+				<!-- memberScript.js와 연결된 inputCheck()함수가 값이 올바르게 되었는지 확인해줌-->
 					<input type="button" value="회원가입" onClick="inputCheck()">&emsp;
 					<input type="reset" value="다시쓰기">&emsp;
 					<input type="button" value="로그인" onClick="location.href='login.jsp'">
