@@ -7,9 +7,10 @@
   String pwd = request.getParameter("pwd");
   String msg = "로그인에 실패 하였습니다.";
   String url = "login.jsp";
-  
+  /* memberMgr 자바빈의 loginMember메소드 */
   boolean result = mMgr.loginMember(id, pwd);
   if(result) {
+	  /* "idKey"에 id 값을 저장 */
 	  session.setAttribute("idKey", id);
 	  msg = "로그인에 성공 하였습니다.";
   }

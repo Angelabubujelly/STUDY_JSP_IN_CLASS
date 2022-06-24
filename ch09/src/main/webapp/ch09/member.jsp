@@ -155,7 +155,7 @@ function findAddr(){
 			</tr>
 			<tr>
 				<td colspan="3" align="center">
-				<!-- memberScript.js와 연결된 inputCheck()함수가 값이 올바르게 되었는지 확인해줌-->
+				<!-- memberScript.js 속에 있는 inputCheck()함수가 값이 올바르게 되었는지 확인해줌-->
 					<input type="button" value="회원가입" onClick="inputCheck()">&emsp;
 					<input type="reset" value="다시쓰기">&emsp;
 					<input type="button" value="로그인" onClick="location.href='login.jsp'">

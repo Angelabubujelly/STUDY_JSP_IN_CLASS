@@ -33,6 +33,7 @@
 				<tr>
 					<td colspan="2">
 						<div align="right">
+						<!--loginCheck()이 값이 잘 입력되었나 확인해줌.  -->
 							<input type="button" value="로그인" onclick="loginCheck()">&ensp;
 							<input type="button" value="회원가입" onClick="location.href='member.jsp'">
 						</div>
