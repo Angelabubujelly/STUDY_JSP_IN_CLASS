@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" action="01.result.jsp">
+이름이 무엇인가요? <input name="name"><br>
+학번이 몇번인가요? <input name="studentNum"><br>
+성별이 무엇인가요?
+<input type="radio" name="gender" value="여자">여자
+<input type="radio" name="gender" value="남자">남자<br>
+<label for="major">전공이 무엇인가요?</label>
+<select id="major" name="major" size="1">
+<option name="major" value="">선택하세요</option>
+<option name="major" value="영화영상">영화영상</option>
+<option name="major" value="법">법</option>
+<option name="major" value="고슴도치는 왜이렇게 귀여울과">고슴도치</option>
+<option name="major" value="컴퓨터공학">컴퓨터공학</option>
+</select><br>
+<input type="submit" value="전송">
+</form>
+</body>
+</html>

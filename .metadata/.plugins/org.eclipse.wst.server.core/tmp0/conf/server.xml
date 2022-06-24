@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\KJK\JSPWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\KJK\JSPWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ch09" path="/ch09" reloadable="true" source="org.eclipse.jst.jee.server:ch09"/></Host>
+      <Context docBase="D:\KJK\GIT_JSP\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\KJK\GIT_JSP\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ch09" path="/ch09" reloadable="true" source="org.eclipse.jst.jee.server:ch09"/><Context docBase="D:\KJK\GIT_JSP\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ch03" path="/ch03" reloadable="true" source="org.eclipse.jst.jee.server:ch03"/><Context docBase="D:\KJK\GIT_JSP\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ch08" path="/ch08" reloadable="true" source="org.eclipse.jst.jee.server:ch08"/></Host>
     </Engine>
   </Service>
 </Server>
