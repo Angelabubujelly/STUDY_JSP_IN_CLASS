@@ -44,9 +44,6 @@ function findAddr(){
 	        }
 	    }).open();
 }
-function win_close() {
-	self.close();
-}
 	
 </script>
 </head>

@@ -56,7 +56,7 @@ public class MemberMgr {
 				pstmt.setString(9, bean.getDetailAddress());
 			String hobby[] = bean.getHobby();
 			char hb[] = {'0','0','0','0','0'};
-			String lists[] = {"�씤�꽣�꽬","�뿬�뻾","寃뚯엫","�쁺�솕","�슫�룞"};
+			String lists[] = {"인터넷","여행","게임","영화","운동"};
 			for(int i=0; i<hobby.length; i++) {
 				for(int j=0; j<lists.length;j++) {
 					if(hobby[i].equals(lists[j]))
@@ -87,7 +87,7 @@ public class MemberMgr {
 		pstmt = con.prepareStatement(sql);
 		pstmt.setString(1, id);
 		rs = pstmt.executeQuery();
-//		data媛� �엳�쑝硫� true �뾾�쑝硫� false 諛섑솚. boolean Type�씠�씪
+//불리언타입이라!!
 		flag = rs.next();
 	} catch(Exception e){
 		e.printStackTrace();
